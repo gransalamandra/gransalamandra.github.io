@@ -1,0 +1,150 @@
+body,
+html {
+  font-family: "Ubuntu Mono", monospace;
+  background-color: #999;
+  color: #fff;
+  margin: 0;
+  height: 100%; 
+  width: 80%;
+  margin: auto; 
+}
+
+h3 {
+  font-size: 2rem;
+  padding-top: 15px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.bg-dark, footer {
+  background: #000 !important;
+  height: 12%;
+}
+
+a, a:hover {
+  color: #f7efe4;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-size: 3.5rem;
+}
+
+main {
+  background: #ddd;
+  color: #333;
+}
+
+section,
+footer {
+  padding: 20px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn2.unrealengine.com/Unreal+Engine%2Fspotlights%2Fcyclone-graphics-turns-comics-into-animation-with-real-time-rendering%2FSpotlight_NoGunsLife_blog_body_img13-1640x1000-833aa0d9b57149713c2a8e526f0663ec301ab314.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top: 5px solid #f7efe4;
+  border-bottom: 5px solid #f7efe4;
+}
+
+header div {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.products a {
+  display: inline-block;
+  margin-right: 20px;
+  background: #589;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.products a:hover {
+  background: #ffa500;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.typed::after {
+  content: "|";
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+  opacity: 0;
+  display: none;
+}
+/* will be used to add icons to products
+.products {
+  position: relative;
+}
+
+h3::before {
+    content: 'test';
+    background-image: url('https://i.imgur.com/s5lqwds.png');
+  background-size: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+*/
+
+/* Cursor animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  body,
+html {
+  width: 100%;
+}
+}
